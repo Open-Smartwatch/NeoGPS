@@ -194,7 +194,7 @@
 
   #else
     // No serial library files were included before this file, just use Serial.
-    #define gpsPort Serial
+    // #define gpsPort Serial
     #define GPS_PORT_NAME "Serial"
     #warning Using Serial for GPS connection.
     

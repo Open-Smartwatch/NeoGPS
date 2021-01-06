@@ -31,12 +31,12 @@
 // required if you will be doing time_t-to-clock_t operations.
 
 #define NMEAGPS_PARSE_GGA
-//#define NMEAGPS_PARSE_GLL
-//#define NMEAGPS_PARSE_GSA
-//#define NMEAGPS_PARSE_GSV
+#define NMEAGPS_PARSE_GLL
+#define NMEAGPS_PARSE_GSA
+#define NMEAGPS_PARSE_GSV
 //#define NMEAGPS_PARSE_GST
 #define NMEAGPS_PARSE_RMC
-//#define NMEAGPS_PARSE_VTG
+#define NMEAGPS_PARSE_VTG
 //#define NMEAGPS_PARSE_ZDA
 
 //------------------------------------------------------
@@ -45,7 +45,7 @@
 // to determine when the GPS quiet time begins, and thus
 // when you can perform "some" time-consuming operations.
 
-#define LAST_SENTENCE_IN_INTERVAL NMEAGPS::NMEA_RMC
+#define LAST_SENTENCE_IN_INTERVAL NMEAGPS::NMEA_GLL
 
 // NOTE: For PUBX-only, PGRM and UBX configs, use
 //          (NMEAGPS::nmea_msg_t)(NMEAGPS::NMEA_LAST_MSG+1)
@@ -210,7 +210,7 @@
 // optionally, all the info for each satellite.
 //
 
-//#define NMEAGPS_PARSE_SATELLITES
+#define NMEAGPS_PARSE_SATELLITES
 //#define NMEAGPS_PARSE_SATELLITE_INFO
 
 #ifdef NMEAGPS_PARSE_SATELLITES
