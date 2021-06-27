@@ -22,7 +22,7 @@
  * Enable/disable the storage for the members of a fix.
  *
  * Disabling a member prevents it from being parsed from a received message.
- * The disabled member cannot be accessed or stored, and its validity flag 
+ * The disabled member cannot be accessed or stored, and its validity flag
  * would not be available.  It will not be declared, and code that uses that
  * member will not compile.
  *
@@ -45,12 +45,12 @@
 //#define GPS_FIX_HDOP
 //#define GPS_FIX_VDOP
 //#define GPS_FIX_PDOP
-//#define GPS_FIX_LAT_ERR
-//#define GPS_FIX_LON_ERR
-//#define GPS_FIX_ALT_ERR
-//#define GPS_FIX_SPD_ERR
-//#define GPS_FIX_HDG_ERR
-//#define GPS_FIX_TIME_ERR
+#define GPS_FIX_LAT_ERR
+#define GPS_FIX_LON_ERR
+#define GPS_FIX_ALT_ERR
+#define GPS_FIX_SPD_ERR
+#define GPS_FIX_HDG_ERR
+#define GPS_FIX_TIME_ERR
 //#define GPS_FIX_GEOID_HEIGHT
 
 #endif
